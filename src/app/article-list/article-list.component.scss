@@ -1,0 +1,25 @@
+.card{
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 4px;
+    margin-top: 15px;
+}
+.card-body{
+    display: flex;
+    padding: 15px;
+}
+h3{
+    font-size: 2.5em;
+}
+img {
+    max-height: 150px;
+}
+.meta-info{
+    color: grey;
+    margin-left: 15px;
+    font-size: 0.9em;
+}
+.continue-reading{
+    font-style: italic;
+    color: gray;
+    margin-left: 15px;;
+}

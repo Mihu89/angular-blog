@@ -14,7 +14,6 @@ export class ArticleListComponent implements OnInit {
 
   ngOnInit(): void {
     this.articles = ARTICLES;
-    console.log(this.articles);
   }
 
 }
