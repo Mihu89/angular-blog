@@ -2,6 +2,7 @@ import { ArticleService } from './../article.service';
 import { Component, OnInit } from '@angular/core';
 import { Article } from '../models';
 import { ARTICLES } from '../mocks/mock-articles';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-article-list',
@@ -11,7 +12,9 @@ import { ARTICLES } from '../mocks/mock-articles';
 export class ArticleListComponent implements OnInit {
 
   articles: Article[];
-  constructor(private articleService: ArticleService) { }
+  constructor(
+    private route: ActivatedRoute,
+    private articleService: ArticleService) { }
 
   ngOnInit(): void {
     this.getArticles();

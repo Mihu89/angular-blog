@@ -9,7 +9,7 @@
                 {{article.date | date}} Author: {{article.author}}
             <p [innerHtml]='article.description'></p>
             </div>
-            <p><a href="#" class="continue-reading">Continue reading</a></p>
+            <p><a [routerLink]="article.id" class="continue-reading">Continue reading</a></p>
         </div>
     </div>
 </div>
