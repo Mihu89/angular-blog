@@ -1,1 +1,10 @@
-<p>article works! {{article.id}}</p>
+<div class="article">
+    <div class="article-image">
+        <img [src]="article.imageUrl" alt="image">
+    </div>
+    <h1 class="title">{{article.title}}</h1>
+    <div class="meta-info">
+        {{article.date | date}}
+    </div>
+    <p [innerHtml]="article.content"></p>
+</div>

@@ -10,7 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ArticleComponent implements OnInit {
 
-  article: Article = null;
+  article: Article = new Article();
   constructor(private route: ActivatedRoute,
     private articleService: ArticleService,
     private router: Router
@@ -24,7 +24,7 @@ export class ArticleComponent implements OnInit {
       this.articleService.getArticle(id)
         .subscribe(article => {
           if (article === undefined) {
-            this.router.navigateByUrl('');
+            this.router.navigateByUrl('404');
             return;
           }
           this.article = article;
